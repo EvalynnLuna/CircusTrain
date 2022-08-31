@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CircusTrain
 {
-    public partial class Form1 : Form
+    public partial class CircusTrain : Form
     {
-        public Form1()
+        public CircusTrain()
         {
             InitializeComponent();
         }
