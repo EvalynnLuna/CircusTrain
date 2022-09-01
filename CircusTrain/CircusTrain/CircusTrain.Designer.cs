@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ResultLB = new System.Windows.Forms.ListBox();
             this.MeercatLBL = new System.Windows.Forms.Label();
             this.BunnyLBL = new System.Windows.Forms.Label();
             this.WolfLBL = new System.Windows.Forms.Label();
@@ -44,13 +44,13 @@
             this.CalculateBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // ResultLB
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(546, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(242, 407);
-            this.listBox1.TabIndex = 0;
+            this.ResultLB.FormattingEnabled = true;
+            this.ResultLB.Location = new System.Drawing.Point(546, 19);
+            this.ResultLB.Name = "ResultLB";
+            this.ResultLB.Size = new System.Drawing.Size(242, 407);
+            this.ResultLB.TabIndex = 0;
             // 
             // MeercatLBL
             // 
@@ -175,9 +175,10 @@
             this.Controls.Add(this.WolfLBL);
             this.Controls.Add(this.BunnyLBL);
             this.Controls.Add(this.MeercatLBL);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.ResultLB);
             this.Name = "CircusTrain";
             this.Text = "Circus train";
+            this.Load += new System.EventHandler(this.CircusTrain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,7 +186,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox ResultLB;
         private System.Windows.Forms.Label MeercatLBL;
         private System.Windows.Forms.Label BunnyLBL;
         private System.Windows.Forms.Label WolfLBL;

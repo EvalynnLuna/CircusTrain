@@ -16,5 +16,10 @@ namespace CircusTrain
         {
             InitializeComponent();
         }
+
+        private void CircusTrain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
