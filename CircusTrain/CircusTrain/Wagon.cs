@@ -10,5 +10,6 @@ namespace CircusTrain
     {
         int wagonnumber;
         int capacity = 10;
+        List<Animals> animals = new List<Animals>();
     }
 }

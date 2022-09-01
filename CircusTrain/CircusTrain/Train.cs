@@ -8,5 +8,6 @@ namespace CircusTrain
 {
     public class Train
     {
+        List<Wagon> wagonList = new List<Wagon>();
     }
 }
